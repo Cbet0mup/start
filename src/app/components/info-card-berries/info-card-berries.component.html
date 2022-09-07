@@ -1,0 +1,13 @@
+
+  <h1 mat-dialog-title><b>"{{berrySelectInfo.name || 0}}"</b></h1>
+  <div mat-dialog-content>
+          <p>id: {{berrySelectInfo.id}}</p>
+          <p>size: {{berrySelectInfo.size}}</p>
+          <p>smoothness: {{berrySelectInfo.smoothness}}</p>
+          <p>growth_time: {{berrySelectInfo.growth_time}}</p>
+          <p>max_harvest: {{berrySelectInfo.max_harvest}}</p>
+  </div>
+  <div mat-dialog-actions>
+    <button (click)="selectName()" mat-button mat-dialog-close cdkFocusInitial>Выбрать</button>
+    <button mat-button mat-dialog-close cdkFocusInitial>Закрыть</button>
+  </div>

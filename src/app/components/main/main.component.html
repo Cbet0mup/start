@@ -1,0 +1,12 @@
+<header>
+  <h1>Berries list</h1>
+</header>
+<div class="container">
+  <p><b>Выбранная ягода: {{getSelectName()?.toUpperCase() || '-'}}</b></p>
+</div>
+
+<div class="container">
+  <ul>
+    <li (click)="getBerryInfo(berry.name); openDialog('50ms', '50ms')" *ngFor="let berry of berries"><b>{{berry.name}}</b></li>
+  </ul>
+</div>
